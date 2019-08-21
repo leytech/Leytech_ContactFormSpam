@@ -1,0 +1,13 @@
+{
+    "name": "leytech/leytech_contact_form_spam",
+    "type": "magento-module",
+    "description": "Magento contact form spam filter module to reject contact form messages that contain links or blacklisted words.",
+    "homepage": "https://github.com/leytech/Leytech_ContactFormSpam",
+    "require": {
+        "php": ">=5.4.0",
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra":{
+        "magento-root-dir": "src/"
+    }
+}

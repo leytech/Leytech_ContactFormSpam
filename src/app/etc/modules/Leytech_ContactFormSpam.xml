@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Leytech_ContactFormSpam
+ * @author     Chris Nolan (chris@leytech.co.uk)
+ * @copyright  Copyright (c) 2019 Leytech
+ * @license    https://opensource.org/licenses/MIT  The MIT License  (MIT)
+ */
+-->
+<config>
+    <modules>
+        <Leytech_ContactFormSpam>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Leytech_ContactFormSpam>
+    </modules>
+</config>

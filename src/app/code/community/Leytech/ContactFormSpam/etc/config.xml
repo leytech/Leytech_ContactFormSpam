@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Leytech_ContactFormSpam
+ * @author     Chris Nolan (chris@leytech.co.uk)
+ * @copyright  Copyright (c) 2019 Leytech
+ * @license    https://opensource.org/licenses/MIT  The MIT License  (MIT)
+ */
+-->
+<config>
+    <modules>
+        <leytech_contact_form_spam>
+            <version>1.0.0</version>
+        </leytech_contact_form_spam>
+    </modules>
+    <global>
+        <helpers>
+            <leytech_contact_form_spam>
+                <class>Leytech_ContactFormSpam_Helper</class>
+            </leytech_contact_form_spam>
+        </helpers>
+        <models>
+            <leytech_contact_form_spam>
+                <class>Leytech_ContactFormSpam_Model</class>
+            </leytech_contact_form_spam>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_predispatch_contacts_index_post>
+                <observers>
+                    <leytech_contact_form_spam>
+                        <class>leytech_contact_form_spam/observer</class>
+                        <method>validateContactForm</method>
+                    </leytech_contact_form_spam>
+                </observers>
+            </controller_action_predispatch_contacts_index_post>
+        </events>
+    </frontend>
+</config>
